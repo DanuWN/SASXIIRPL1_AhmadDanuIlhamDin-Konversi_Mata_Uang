@@ -2,114 +2,102 @@
 {
     partial class Form1
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        /// <summary> Clean up resources. </summary>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
-            {
                 components.Dispose();
-            }
             base.Dispose(disposing);
         }
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.labelTitle = new System.Windows.Forms.Label();
+            this.comboBoxMataUang = new System.Windows.Forms.ComboBox();
+            this.textBoxNominal = new System.Windows.Forms.TextBox();
+            this.labelInput = new System.Windows.Forms.Label();
+            this.labelOutput = new System.Windows.Forms.Label();
+            this.textBoxRupiah = new System.Windows.Forms.TextBox();
+            this.buttonKonversi = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // labelTitle
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(341, 75);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(104, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Konversi Mata Uang";
+            this.labelTitle.AutoSize = true;
+            this.labelTitle.Location = new System.Drawing.Point(210, 22);
+            this.labelTitle.Name = "labelTitle";
+            this.labelTitle.Size = new System.Drawing.Size(104, 13);
+            this.labelTitle.TabIndex = 0;
+            this.labelTitle.Text = "Konversi Mata Uang";
             // 
-            // button1
+            // comboBoxMataUang
             // 
-            this.button1.Location = new System.Drawing.Point(148, 284);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Konversi";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.comboBoxMataUang.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxMataUang.FormattingEnabled = true;
+            this.comboBoxMataUang.Location = new System.Drawing.Point(270, 60);
+            this.comboBoxMataUang.Name = "comboBoxMataUang";
+            this.comboBoxMataUang.Size = new System.Drawing.Size(100, 21);
+            this.comboBoxMataUang.TabIndex = 1;
             // 
-            // textBox1
+            // textBoxNominal
             // 
-            this.textBox1.Location = new System.Drawing.Point(148, 150);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 2;
+            this.textBoxNominal.Location = new System.Drawing.Point(150, 60);
+            this.textBoxNominal.Name = "textBoxNominal";
+            this.textBoxNominal.Size = new System.Drawing.Size(100, 20);
+            this.textBoxNominal.TabIndex = 2;
             // 
-            // textBox2
+            // labelInput
             // 
-            this.textBox2.Location = new System.Drawing.Point(148, 226);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 3;
+            this.labelInput.AutoSize = true;
+            this.labelInput.Location = new System.Drawing.Point(120, 40);
+            this.labelInput.Name = "labelInput";
+            this.labelInput.Size = new System.Drawing.Size(55, 13);
+            this.labelInput.TabIndex = 3;
+            this.labelInput.Text = "USD/JYN";
             // 
-            // comboBox1
+            // labelOutput
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(270, 149);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(73, 21);
-            this.comboBox1.TabIndex = 4;
+            this.labelOutput.AutoSize = true;
+            this.labelOutput.Location = new System.Drawing.Point(120, 100);
+            this.labelOutput.Name = "labelOutput";
+            this.labelOutput.Size = new System.Drawing.Size(90, 13);
+            this.labelOutput.TabIndex = 4;
+            this.labelOutput.Text = "Indonesia Rupiah";
             // 
-            // label2
+            // textBoxRupiah
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(120, 210);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(90, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Indonesia Rupiah";
+            this.textBoxRupiah.Location = new System.Drawing.Point(150, 116);
+            this.textBoxRupiah.Name = "textBoxRupiah";
+            this.textBoxRupiah.ReadOnly = true;
+            this.textBoxRupiah.Size = new System.Drawing.Size(220, 20);
+            this.textBoxRupiah.TabIndex = 5;
             // 
-            // label3
+            // buttonKonversi
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(120, 122);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 13);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "USD/JYN";
+            this.buttonKonversi.Location = new System.Drawing.Point(150, 150);
+            this.buttonKonversi.Name = "buttonKonversi";
+            this.buttonKonversi.Size = new System.Drawing.Size(75, 23);
+            this.buttonKonversi.TabIndex = 6;
+            this.buttonKonversi.Text = "Konversi";
+            this.buttonKonversi.UseVisualStyleBackColor = true;
+            this.buttonKonversi.Click += new System.EventHandler(this.buttonKonversi_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(600, 300);
+            this.Controls.Add(this.labelTitle);
+            this.Controls.Add(this.comboBoxMataUang);
+            this.Controls.Add(this.textBoxNominal);
+            this.Controls.Add(this.labelInput);
+            this.Controls.Add(this.labelOutput);
+            this.Controls.Add(this.textBoxRupiah);
+            this.Controls.Add(this.buttonKonversi);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Form Konversi";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -118,13 +106,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label labelTitle;
+        private System.Windows.Forms.ComboBox comboBoxMataUang;
+        private System.Windows.Forms.TextBox textBoxNominal;
+        private System.Windows.Forms.Label labelInput;
+        private System.Windows.Forms.Label labelOutput;
+        private System.Windows.Forms.TextBox textBoxRupiah;
+        private System.Windows.Forms.Button buttonKonversi;
     }
 }
-
