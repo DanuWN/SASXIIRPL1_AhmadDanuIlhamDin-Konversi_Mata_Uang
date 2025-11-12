@@ -23,12 +23,14 @@
             this.labelOutput = new System.Windows.Forms.Label();
             this.textBoxRupiah = new System.Windows.Forms.TextBox();
             this.buttonKonversi = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelTitle
             // 
             this.labelTitle.AutoSize = true;
-            this.labelTitle.Location = new System.Drawing.Point(210, 22);
+            this.labelTitle.Location = new System.Drawing.Point(250, 20);
             this.labelTitle.Name = "labelTitle";
             this.labelTitle.Size = new System.Drawing.Size(104, 13);
             this.labelTitle.TabIndex = 0;
@@ -42,6 +44,7 @@
             this.comboBoxMataUang.Name = "comboBoxMataUang";
             this.comboBoxMataUang.Size = new System.Drawing.Size(100, 21);
             this.comboBoxMataUang.TabIndex = 1;
+            this.comboBoxMataUang.SelectedIndexChanged += new System.EventHandler(this.comboBoxMataUang_SelectedIndexChanged);
             // 
             // textBoxNominal
             // 
@@ -86,9 +89,31 @@
             this.buttonKonversi.UseVisualStyleBackColor = true;
             this.buttonKonversi.Click += new System.EventHandler(this.buttonKonversi_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(446, 40);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(28, 13);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Kurs";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(446, 60);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(50, 13);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Nilai kurs";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(600, 300);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.labelTitle);
             this.Controls.Add(this.comboBoxMataUang);
             this.Controls.Add(this.textBoxNominal);
@@ -113,5 +138,7 @@
         private System.Windows.Forms.Label labelOutput;
         private System.Windows.Forms.TextBox textBoxRupiah;
         private System.Windows.Forms.Button buttonKonversi;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
